@@ -1,0 +1,77 @@
+/*p#home{
+  font-family: serif;
+  color:white;
+  background-color: green;
+}*/
+
+div#dao{
+  font-family:Times;
+  background-image: url(../images/1218_12.jpg);
+  height:800;
+  width:1000;
+  background-attachment:fixed;
+  float:left;
+  clear:right;
+}
+
+p#monkey {
+  float:left;
+  clear:right;
+}
+
+p#owner{
+  float:left;
+}
+
+p#friend {
+  float:right;
+}
+
+p#clever{
+  float:right;
+}
+
+div#daodao{
+       text-align: center;
+}
+
+div h1{
+  text-align: center;
+}
+
+.resume{
+  font-weight :bold;
+}
+
+.years .ability .develop{
+  color:green;
+  font-weight :bold;
+}
+
+.hobby .series{
+  color:purple;
+  font-weight :bold;
+}
+
+#one, #two, #three ,#four, #five{
+  padding-right  :80px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+/*#five{
+  padding-right :70px;
+  padding-left: 70px;
+}
+#four{
+  padding-right :70px;
+  padding-left: 70px;
+}
+ #three{
+  padding-right :70px;
+  padding-left: 70px;
+}
+#two{
+  padding-right :70px;
+  padding-left: 70px;
+}*/
