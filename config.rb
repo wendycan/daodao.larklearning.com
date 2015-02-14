@@ -61,6 +61,8 @@ set :images_dir, 'images'
 
 set :haml, ugly: true
 
+activate :i18n, langs: [:cn, :en]
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
