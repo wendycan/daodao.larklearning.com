@@ -22,6 +22,7 @@ end
 #
 # With no layout
 # page "/path/to/file.html", :layout => false
+page "/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -57,6 +58,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+set :haml, ugly: true
 
 # Build-specific configuration
 configure :build do
