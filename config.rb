@@ -54,7 +54,7 @@ page "/index.html", :layout => false
 # end
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  # blog.prefix = "blog"
+  blog.prefix = "cn"
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
@@ -67,8 +67,7 @@ activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
-  blog.name = 'cn'
-  blog.prefix = 'cn'
+  # blog.name = 'cn'
   # blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
 

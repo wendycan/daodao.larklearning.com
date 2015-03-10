@@ -1,6 +1,6 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://ruby.taobao.org/'
 
 gem "middleman", "~>3.2.2"
 gem "middleman-blog"
@@ -13,3 +13,6 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 gem 'font-awesome-sass'
 gem "compass"
+
+
+# gem 'nokogiri'
