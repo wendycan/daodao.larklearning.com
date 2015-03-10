@@ -16,6 +16,7 @@ drawingSvg = (value, el)->
             path = snap.selectAll("path,line,polyline,polygon,ellipse")
 
             path.forEach (i)->
+              console.log i
               l = i.attr("data-length")
               if l == null
                 l = i.getTotalLength()
