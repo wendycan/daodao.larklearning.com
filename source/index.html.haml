@@ -6,68 +6,85 @@ title: Welcome to Middleman
 = javascript_include_tag "application"
 = javascript_include_tag "home"
 
-.introduction
+.introduction.text-center
   .wrap
     .row
       .large-12.colulmns
         .wrap
           .inline-svg.draw.timer{:'data-src' => '/images/daodao.svg', :'data-timer-v' => 0}
-          %p.text-center
-            11111111111111111
+          %h3 刀刀
+          %br
+          %p 汪星人，TEDDY
+          %p 出生于公元 2014 年 6 月 6 日
 .master
   .wrap
     .row
       .large-6.columns
         .inline-svg.draw.scrollable{:'data-src' => '/images/daodao.svg'}
       .large-6.columns
-        %p This is me
+        %h3 这是我的主人
+        %br
+        %br
+        %p
+          = '她叫'
+          %a{:href => "http://wendycan.org"} wendy
+        %p 她，活泼可爱，古灵精怪
+        %p 她说，这里写下只关于我的故事，或许某天，我会成为一只名狗
+        %p 她，永远是最懂我的人
 .personality.text-center.wrap
   %h3
-    Visionare Features
+    关于我
   .row
     %ul.large-block-grid-3
       %li
         = image_tag 'middleman.png'
-        %p First
+        %p 热情
       %li
         = image_tag 'middleman.png'
-        %p Second
+        %p 执着
       %li
         = image_tag 'middleman.png'
-        %p Second
+        %p 聪明
       %li
         = image_tag 'middleman.png'
-        %p Second
+        %p 早起
       %li
         = image_tag 'middleman.png'
-        %p Second
+        %p 贪吃
       %li
         = image_tag 'middleman.png'
-        %p Second
+        %p 顽皮
 .enter.text-center.wrap
   .row
     .large-12.columns
       = image_tag("dog.png")
-      %h4 I Would Like To
-      %h5 improve my art skill
+      %h4 这就是我
+      %h5 这里有所有关于我的故事
       %br
   .row
-    .large-6.columns
-      %p Most of us gradually grow out of the artist we were as a child. Circle “Art” is here to help make that inner artist shine again. There are so many creative ways to express yourself! Would you like to be a dancer or perhaps star in a famous show?
-    .large-6.columns
-      %p Most of us gradually grow out of the artist we were as a child. Circle “Art” is here to help make that inner artist shine again. There are so many creative ways to express yourself! Would you like to be a dancer or perhaps star in a famous show?
-      %br
+    .large-10.columns.large-centered
+      .row
+        .large-6.columns
+          %p 这个世界很大，而我理解的不多，我会努力学习更多的东西。加油！
+        .large-6.columns
+          %p 亲爱的 wendy，我知道我很顽皮，无数次我知道错了，但我总是那么容易忘记，请一定耐心对我，我只是一只小 TEDDY。So Sorry and Thanks!
+          %br
   .row
     .large-2.columns.large-centered
-      .button Enter
+      .button.primary
+        %a{:href => "#"}
+          进入
 .info.text-center
-  .wrap
+  .wrap-large
     .row
       .large-12.columns
-        %h4 Makek A Wish
-        %small Send us your dream
-        %p Most of us gradually grow out of the artist we were as a child. Circle “Art” is here to help make that inner artist shine again. There are so many creative ways to express yourself! Would you like to be a dancer or perhaps star in a famous show?
+        %h4 如果看到我
+        %h5 而我的旁边不是 wendy
+        %br
+        %p 她很爱我，我也舍不得离开她，如果看到不幸走丢的我，请一定一定联系我的主人。
         %br
     .row
-      .large-2.columns.large-centered
-        .button.tiny Email: wendycaner@gamil.com
+      .large-4.columns.large-centered
+        .button.primary
+          %a{:href => "mailto:wendycaner@gmail.com"}
+            wendycaner@gamil.com

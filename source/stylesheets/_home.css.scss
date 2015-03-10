@@ -19,3 +19,20 @@ p {
 .introduction {
 
 }
+
+h3, h4, h5 {
+  color: #fff;
+}
+
+p {
+  color: #ebebeb;
+  margin-bottom: .25rem;
+}
+
+a {
+  color: $btn-bg-color;
+
+  &:hover {
+    color: $btn-hover-bg-color;
+  }
+}
