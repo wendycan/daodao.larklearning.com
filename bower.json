@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": ">= 1.9.0",
-    "foundation": "~5.2.1"
+    "foundation": "~5.2.1",
+    "skrollr": "~0.6.29",
+    "Snap.svg": "~0.3.0"
   },
   "private": true
 }
