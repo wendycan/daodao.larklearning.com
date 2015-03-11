@@ -31,6 +31,23 @@ drawingSvg = (value, el)->
   updateDrawings()
 
 $(document).ready ->
+  $(".trees").each ->
+    cur = $(this)
+    w = cur.width()
+    h = cur.height()
+    cur.css(
+      width:w,
+      height:h
+    )
+
+    svg = Snap(w,h)
+
+    Snap.load cur.data("src"), (f)->
+      svg.append(f)
+
+    svg.appendTo(cur.get(0))
+    cur.data("snap",svg)
+
   $('.draw').each ->
     cur = $(this)
     cur.attr("data-"+cur.height()+"-bottom","@data-v:0")

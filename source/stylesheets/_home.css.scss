@@ -4,7 +4,7 @@ p {
 .inline-svg {
   margin: auto;
 }
-.inline-svg, svg {
+.inline-svg, .inline-svg svg {
   height: 300px;
   width: 400px;
 }
@@ -35,4 +35,117 @@ a {
 
 .button {
   border-radius: 3px;
+}
+
+.trees {
+  width: 100px;
+  height: 50px;
+}
+
+.trees-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.trees-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.tree {
+  // -webkit-transform-origin: 50% 100%;
+  // -webkit-animation: breeze 2s ease-out infinite;
+  // -moz-transform-origin: 0 bottom;
+  // -moz-animation: breeze 2s ease-out infinite;
+}
+@-webkit-keyframes breeze{
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes breeze{
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(25deg);
+  }
+  50% {
+    -moz-transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+.personality {
+  li.rotate-l {
+    -moz-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+  }
+  li.rotate-l:before {
+    right: 12%;
+  }
+  li.rotate-r:before {
+    left: 12%;
+  }
+  li.rotate-r {
+    -moz-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+  }
+  li:before {
+    content: '';
+    position: absolute;
+    border: solid 10px #E0B9A6;
+    border-radius: 50%;
+  }
+  li img {
+    width: 85%;
+    &:hover {
+      -webkit-animation: rotate 0.5s ease-out;
+      -moz-animation: rotate 0.5s ease-out;
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+  }
+}
+img {
+  width: 100%;
+}
+li.small img {
+  // width: 60%;
+}
+.has-hr {
+  width: 100%;
+  background-color: white;
+  opacity: .3;
+  border-radius: 25%;
+  height: 10px;
 }

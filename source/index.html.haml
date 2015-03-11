@@ -8,6 +8,9 @@ title: Welcome to Middleman
 = javascript_include_tag "home"
 
 .home{:'data-bottom' => "background-color: hsl(97, 26%, 62%); background-image: url(/images/bg.png);", :'data-top' => "background-color: hsl(97, 26%, 52%); background-image: url(/images/bg.png);"}
+  .trees-area
+    .trees-left.trees{:'data-src'=> '/images/trees-left.svg'}
+    .trees-right.trees{:'data-src'=> '/images/trees-right.svg'}
   .introduction.text-center
     .wrap-large
       .row
@@ -37,30 +40,38 @@ title: Welcome to Middleman
   .personality.text-center.wrap
     %h3
       关于我
-    .row{:'data-bottom' => "opacity: 0;", :'data-100-center' => "opacity: 1;"}
+    %br
+    %br
+    .row
+      .has-hr
       %ul.large-block-grid-3
-        %li
+        %li.rotate-r
           = image_tag 'middleman.png'
           %p 热情
-        %li
+        %li.rotate-r.small
           = image_tag 'middleman.png'
           %p 执着
-        %li
+        %li.rotate-r
           = image_tag 'middleman.png'
           %p 聪明
-        %li
+      %br
+      .has-hr
+      %ul.large-block-grid-3
+        %li.rotate-l.small
           = image_tag 'middleman.png'
           %p 早起
-        %li
+        %li.rotate-l
           = image_tag 'middleman.png'
           %p 贪吃
-        %li
+        %li.rotate-l.small
           = image_tag 'middleman.png'
           %p 顽皮
-  .enter.text-center.wrap{:'data-bottom' => "opacity: 0;", :'data-100-center' => "opacity: 1;"}
+  .enter.text-center.wrap
     .row
       .large-12.columns
-        = image_tag("dog.png")
+        .row
+          .large-4.columns.large-centered
+            = image_tag("dog.png")
         %h4 这就是我
         %h5 这里有所有关于我的故事
         %br
@@ -78,7 +89,7 @@ title: Welcome to Middleman
           %a{:href => "/cn/all.html"}
             进入
   .info.text-center
-    .wrap-large{:'data-bottom' => "opacity: 0;", :'data-100-center' => "opacity: 1;"}
+    .wrap-large
       .row
         .large-12.columns
           %h4 如果看到我
