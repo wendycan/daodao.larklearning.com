@@ -68,6 +68,7 @@ $(document).ready ->
   , 30
 
   skrollr.init
+    forceHeight: false
     smoothScrolling: true
     smoothScrollingDuration: 350
     mobileDeceleration: 0.005
