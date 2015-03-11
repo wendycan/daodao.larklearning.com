@@ -16,4 +16,4 @@ gem 'font-awesome-sass'
 gem "compass"
 
 
-# gem 'nokogiri'
+gem 'nokogiri'
