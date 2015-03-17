@@ -25,7 +25,7 @@ title: Welcome to Middleman
     .wrap
       .row
         .large-6.columns
-          .inline-svg.draw.scrollable{:'data-src' => '/images/daodao.svg'}
+          = image_tag 'master.png'
         .large-6.columns
           %h3 这是我的主人
           %br
@@ -71,7 +71,7 @@ title: Welcome to Middleman
       .large-12.columns
         .row
           .large-4.columns.large-centered
-            = image_tag("dog.png")
+            .inline-svg.draw.scrollable{:'data-src' => '/images/daodao.svg'}
         %h4 这就是我
         %h5 这里有所有关于我的故事
         %br
