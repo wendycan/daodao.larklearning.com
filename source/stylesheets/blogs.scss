@@ -1,0 +1,19 @@
+.green-link {
+  color: $color;
+
+  &:hover {
+    color: $light-color;
+  } 
+}
+
+.primary-link {
+  color: $btn-bg-color;
+
+  &:hover {
+    color: $btn-hover-bg-color;
+  }
+}
+
+p {
+  color: hsla(0, 0, 25, 1);
+}
